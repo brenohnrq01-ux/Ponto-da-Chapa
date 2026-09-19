@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Ponto da Chapa | Portfólio de Breno Henrique</title>
+
+  <meta
+    name="description"
+    content="Site demonstrativo de uma lanchonete fictícia, desenvolvido por Breno Henrique. Conheça o projeto com cardápio, galeria e layout responsivo."
+  >
+
+  <meta name="author" content="Breno Henrique">
+
+  <meta name="theme-color" content="#751b1b">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="cabecalho">
+  <a class="logo" href="#inicio">Ponto da Chapa</a>
+
+  <button
+    type="button"
+    id="botao-menu"
+    class="botao-menu"
+    aria-expanded="false"
+    aria-controls="menu-principal"
+    hidden
+  >
+    Menu
+  </button>
+
+  <nav id="menu-principal" aria-label="Menu principal">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#cardapio">Cardápio</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+  <main>
+    <section id="inicio" class="destaque">
+  <div class="destaque-conteudo">
+    <div class="destaque-texto">
+      <p class="etiqueta">Na chapa, feito na hora</p>
+
+      <h1>Seu ponto de encontro com o sabor.</h1>
+
+      <p class="destaque-descricao">
+        Hambúrgueres caprichados, porções para compartilhar
+        e aquele milk-shake para completar o encontro.
+      </p>
+
+      <a class="botao" href="#cardapio">
+        Conhecer o cardápio
+      </a>
+
+      <p class="destaque-aviso">
+        Lanchonete fictícia · Projeto de portfólio
+      </p>
+    </div>
+
+    <img
+      class="destaque-imagem"
+      src="imagens/lanche.png"
+      alt="Hambúrguer com queijo derretido, alface e tomate em pão dourado"
+      width="1448"
+      height="1086"
+      fetchpriority="high"
+    >
+  </div>
+</section>
+
+    <section id="sobre" class="secao">
+      <h2>Conheça a Ponto da Chapa</h2>
+
+      <p>
+        Um lugar para reunir os amigos e saborear um lanche
+        preparado na hora. Nosso cardápio combina hambúrgueres
+        na chapa, porções para compartilhar e bebidas para
+        acompanhar cada pedido.
+      </p>
+    </section>
+
+    <section id="cardapio" class="secao">
+  <h2>Nosso cardápio</h2>
+
+  <p class="descricao-secao">
+    Conheça algumas das combinações da casa.
+    Produtos e preços ilustrativos.
+  </p>
+
+  <div class="grade-cardapio">
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🍔</div>
+
+      <div class="conteudo-produto">
+        <h3>Clássico da Chapa</h3>
+
+        <p>
+          Pão, hambúrguer bovino, queijo, alface,
+          tomate e maionese da casa.
+        </p>
+
+        <span class="preco">R$ 24,90</span>
+      </div>
+    </article>
+
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🥓</div>
+
+      <div class="conteudo-produto">
+        <h3>Bacon da Casa</h3>
+
+        <p>
+          Pão, hambúrguer bovino, queijo cheddar,
+          bacon crocante e molho especial.
+        </p>
+
+        <span class="preco">R$ 29,90</span>
+      </div>
+    </article>
+
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🌱</div>
+
+      <div class="conteudo-produto">
+        <h3>Chapa Veggie</h3>
+
+        <p>
+          Pão, hambúrguer de grão-de-bico, alface,
+          tomate e molho de ervas.
+        </p>
+
+        <span class="preco">R$ 26,90</span>
+      </div>
+    </article>
+
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🍟</div>
+
+      <div class="conteudo-produto">
+        <h3>Batata da Turma</h3>
+
+        <p>
+          Porção de batatas fritas crocantes,
+          acompanhada de maionese da casa.
+        </p>
+
+        <span class="preco">R$ 19,90</span>
+      </div>
+    </article>
+
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🥤</div>
+
+      <div class="conteudo-produto">
+        <h3>Milk-shake de Chocolate</h3>
+
+        <p>
+          Milk-shake cremoso com calda de chocolate.
+          Copo de 400 ml.
+        </p>
+
+        <span class="preco">R$ 17,90</span>
+      </div>
+    </article>
+
+    <article class="card-produto">
+      <div class="ilustracao-produto" aria-hidden="true">🍊</div>
+
+      <div class="conteudo-produto">
+        <h3>Suco de Laranja</h3>
+
+        <p>
+          Suco de laranja preparado na hora.
+          Copo de 400 ml.
+        </p>
+
+        <span class="preco">R$ 9,90</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <section id="galeria" class="secao">
+  <h2>Um gostinho da Ponto da Chapa</h2>
+
+  <p class="descricao-secao">
+    Imagens ilustrativas dos produtos e do ambiente
+    deste projeto fictício.
+  </p>
+
+  <div class="grade-galeria">
+    <figure class="foto-galeria">
+      <img
+        src="imagens/lanche.png"
+        alt="Hambúrguer servido no pão com acompanhamentos"
+        width="800"
+        height="600"
+        loading="lazy"
+      >
+      <figcaption>Um clássico para matar a fome</figcaption>
+    </figure>
+
+    <figure class="foto-galeria">
+      <img
+        src="imagens/batatas.png"
+        alt="Porção de batatas fritas"
+        width="800"
+        height="600"
+        loading="lazy"
+      >
+      <figcaption>Porções para compartilhar</figcaption>
+    </figure>
+
+    <figure class="foto-galeria">
+      <img
+        src="imagens/milkshake.png"
+        alt="Milk-shake de chocolate servido em um copo"
+        width="800"
+        height="600"
+        loading="lazy"
+      >
+      <figcaption>Uma pausa com mais sabor</figcaption>
+    </figure>
+
+    <figure class="foto-galeria">
+      <img
+        src="imagens/ambiente.png"
+        alt="Ambiente de uma lanchonete com mesas e cadeiras"
+        width="800"
+        height="600"
+        loading="lazy"
+      >
+      <figcaption>Um espaço para reunir os amigos</figcaption>
+    </figure>
+  </div>
+</section>
+
+  <section id="depoimentos" class="secao">
+  <h2>Quem prova, conta</h2>
+
+  <p class="descricao-secao">
+    Depoimentos fictícios, criados apenas para demonstrar
+    o layout deste projeto de portfólio.
+  </p>
+
+  <div class="grade-depoimentos">
+    <figure class="card-depoimento">
+      <blockquote>
+        <p>
+          “O hambúrguer estava delicioso e a batata veio
+          bem crocante. Uma combinação que eu pediria de novo!”
+        </p>
+      </blockquote>
+
+      <figcaption>
+        <strong>Mariana S.</strong>
+        <span>Cliente fictícia</span>
+      </figcaption>
+    </figure>
+
+    <figure class="card-depoimento">
+      <blockquote>
+        <p>
+          “Um ambiente aconchegante para encontrar os amigos.
+          O milk-shake de chocolate foi o destaque da noite.”
+        </p>
+      </blockquote>
+
+      <figcaption>
+        <strong>Lucas A.</strong>
+        <span>Cliente fictício</span>
+      </figcaption>
+    </figure>
+
+    <figure class="card-depoimento">
+      <blockquote>
+        <p>
+          “Gostei de encontrar uma opção vegetariana no
+          cardápio. O lanche estava bem preparado e saboroso.”
+        </p>
+      </blockquote>
+
+      <figcaption>
+        <strong>Camila R.</strong>
+        <span>Cliente fictícia</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+  <section id="localizacao" class="secao">
+  <h2>Onde seria nosso encontro</h2>
+
+  <p class="descricao-secao">
+    Nossa lanchonete é fictícia. O mapa apresenta apenas
+    a cidade de referência deste projeto: Anápolis, GO.
+  </p>
+
+  <div class="grade-localizacao">
+    <div class="informacoes-localizacao">
+      <h3>Localização demonstrativa</h3>
+
+      <p>
+        Anápolis — Goiás<br>
+        Sem endereço físico: projeto de portfólio.
+      </p>
+
+      <h3>Horário de funcionamento</h3>
+
+      <p class="aviso-horario">
+        Horários ilustrativos para esta empresa fictícia.
+      </p>
+
+      <dl class="lista-horarios">
+        <div>
+          <dt>Segunda-feira</dt>
+          <dd>Fechado</dd>
+        </div>
+
+        <div>
+          <dt>Terça a sexta</dt>
+          <dd>17h às 23h</dd>
+        </div>
+
+        <div>
+          <dt>Sábado e domingo</dt>
+          <dd>17h às 23h</dd>
+        </div>
+      </dl>
+
+      <a
+        class="botao"
+        href="https://www.google.com/maps/search/?api=1&query=Anapolis%2C+GO"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver Anápolis no mapa
+        <span class="apenas-leitor"> (abre em nova aba)</span>
+      </a>
+    </div>
+
+    <div class="mapa-localizacao">
+      <iframe
+        title="Mapa de Anápolis, Goiás, cidade de referência do projeto"
+        src="https://maps.google.com/maps?q=Anapolis%2C%20GO&z=12&output=embed"
+        width="600"
+        height="450"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+    <section id="contato" class="secao">
+  <h2>Fale com a Ponto da Chapa</h2>
+
+  <p id="aviso-contato" class="descricao-secao">
+    Formulário demonstrativo: os dados não serão enviados
+    nem armazenados. Use informações fictícias para testar.
+  </p>
+
+  <form
+    id="formulario-contato"
+    class="formulario-contato"
+    aria-describedby="aviso-contato"
+  >
+    <div class="campo">
+      <label for="nome">Nome (obrigatório)</label>
+      <input
+        type="text"
+        id="nome"
+        name="nome"
+        placeholder="Ex.: Maria Silva"
+        autocomplete="name"
+        minlength="2"
+        maxlength="100"
+        required
+      >
+    </div>
+
+    <div class="campo">
+      <label for="email">E-mail (obrigatório)</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Ex.: maria@example.com"
+        autocomplete="email"
+        maxlength="150"
+        required
+      >
+    </div>
+
+    <div class="campo">
+      <label for="mensagem">Mensagem (obrigatório)</label>
+      <textarea
+        id="mensagem"
+        name="mensagem"
+        rows="6"
+        placeholder="Escreva uma mensagem de teste..."
+        minlength="10"
+        maxlength="2000"
+        required
+      ></textarea>
+    </div>
+
+    <button
+      type="submit"
+      id="botao-contato"
+      class="botao"
+      disabled
+    >
+      Testar formulário
+    </button>
+
+    <p
+      id="retorno-contato"
+      class="retorno-contato"
+      role="status"
+    ></p>
+
+    <noscript>
+      <p>Ative o JavaScript para testar este formulário.</p>
+    </noscript>
+  </form>
+  </section>
+
+  </main>
+
+  <footer class="rodape">
+  <p class="titulo-rodape">Ponto da Chapa</p>
+  <p>Seu ponto de encontro com o sabor.</p>
+
+  <nav class="redes-sociais" aria-label="Redes sociais demonstrativas">
+    <button type="button" class="link-social" data-rede="Instagram">
+      Instagram
+    </button>
+
+    <button type="button" class="link-social" data-rede="Facebook">
+      Facebook
+    </button>
+  </nav>
+
+  <p>
+    Projeto de portfólio desenvolvido por Breno Henrique.
+    Empresa fictícia.
+  </p>
+</footer>
+
+  <a 
+  href="https://wa.me/5562995439852?text=Ol%C3%A1%2C%20Breno%21%20Vi%20o%20projeto%20Ponto%20da%20Chapa%20no%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20um%20site."
+  class="whatsapp-flutuante"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar com Breno pelo WhatsApp sobre criação de sites (abre em nova aba)"
+>
+  Fale com o desenvolvedor
+</a>
+
+
+<dialog
+  id="aviso-demonstracao"
+  class="aviso-demonstracao"
+  aria-labelledby="titulo-demonstracao"
+  aria-describedby="texto-demonstracao"
+>
+  <h2 id="titulo-demonstracao">Projeto demonstrativo</h2>
+
+  <p id="texto-demonstracao"></p>
+
+  <form method="dialog">
+    <button type="submit" class="botao">Entendi</button>
+  </form>
+</dialog>
+</body>
+</html>
