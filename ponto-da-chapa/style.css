@@ -693,3 +693,20 @@ a:focus-visible {
     border-radius: 16px;
   }
 }
+/* Mantém os preços alinhados na base dos cartões */
+.card-produto {
+  display: flex;
+  flex-direction: column;
+}
+
+.ilustracao-produto {
+  flex-shrink: 0;
+}
+
+.conteudo-produto {
+  flex: 1;
+}
+
+.conteudo-produto .preco {
+  margin-top: auto;
+}
