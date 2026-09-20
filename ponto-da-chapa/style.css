@@ -710,3 +710,12 @@ a:focus-visible {
 .conteudo-produto .preco {
   margin-top: auto;
 }
+
+.imagem-produto {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  flex-shrink: 0;
+}
